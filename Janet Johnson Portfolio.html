@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janet Johnson — Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#EAB308', 
+                        background: '#0A0A0A',
+                        card: '#161616',
+                        border: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Instrument Serif', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #EAB308, #FEF08A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .ring-grid {
+            background-image: radial-gradient(#262626 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .marquee {
+            animation: marquee 30s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .fade-up { opacity: 0; transform: translateY(20px); animation: fadeInUp 0.8s forwards; }
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-background text-zinc-100 antialiased overflow-x-hidden">
+
+    
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/60 border-b border-border/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+            <a href="#top" class="flex items-center gap-2 font-display text-2xl">
+                <span class="gradient-text">Janet</span><span class="text-zinc-500">Johnson</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+                <a href="#work" class="hover:text-gold transition-colors">Work</a>
+                <a href="#about" class="hover:text-gold transition-colors">About</a>
+                <a href="#experience" class="hover:text-gold transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-gold transition-colors border border-gold/40 px-4 py-1.5 rounded-full text-gold hover:bg-gold hover:text-black">Let's Talk</a>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section id="top" class="relative pt-48 pb-24 px-6 lg:px-10">
+        <div class="absolute inset-0 ring-grid opacity-30 pointer-events-none"></div>
+        <div class="absolute top-40 right-10 w-[400px] h-[400px] rounded-full bg-gold/10 blur-[120px] pointer-events-none"></div>
+        
+        
+            
+            <h1 class="font-display text-[clamp(3.5rem,8vw,8.5rem)] leading-[0.9] tracking-tighter fade-up mb-12">
+                Turning raw <em class="gradient-text">messy data</em><br>
+                into actionable insights</em><br>
+                and decisions businesses can act on.
+            </h1>
+
+            <div class="grid md:grid-cols-3 gap-12 items-end">
+                <p class="md:col-span-2 text-xl text-zinc-400 max-w-2xl leading-relaxed fade-up">
+                    I'm <span class="text-white font-medium">Janet Johnson</span>, a data & business analyst that bridges the gap between raw financial data and strategic business decisions using Python, SQL, and Power BI.
+                </p>
+                <div class="flex flex-col gap-4 fade-up">
+                    <a href="#work" class="flex items-center justify-between px-6 py-4 rounded-xl bg-gold text-black font-bold hover:shadow-[0_0_20px_rgba(234,179,8,0.3)] transition-all">
+                        View selected work <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+        
+            <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-10 fade-up">
+                <div>
+                    <div class="font-display text-5xl gradient-text">$109.85M</div>
+                    <div class="text-xs font-mono uppercase tracking-widest text-zinc-500 mt-2">Sales Analysed</div>
+                </div>
+                <div>
+                    <div class="font-display text-5xl gradient-text">1M+</div>
+                    <div class="text-xs font-mono uppercase tracking-widest text-zinc-500 mt-2">Rows Cleaned</div>
+                </div>
+                <div>
+                    <div class="font-display text-5xl gradient-text">32K</div>
+                    <div class="text-xs font-mono uppercase tracking-widest text-zinc-500 mt-2">Total Orders</div>
+                </div>
+                <div>
+                    <div class="font-display text-5xl gradient-text">100%</div>
+                    <div class="text-xs font-mono uppercase tracking-widest text-zinc-500 mt-2">Till Accuracy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="relative border-y border-border py-8 overflow-hidden bg-card/40">
+        <div class="flex marquee whitespace-nowrap gap-16 font-display text-4xl uppercase">
+            <span class="flex items-center gap-16 text-zinc-600">Power BI <span class="text-gold">✦</span></span>
+            <span class="flex items-center gap-16 text-zinc-600">SQL <span class="text-gold">✦</span></span>
+            <span class="flex items-center gap-16 text-zinc-600">Python <span class="text-gold">✦</span></span>
+            <span class="flex items-center gap-16 text-zinc-600">Pandas <span class="text-gold">✦</span></span>
+            <span class="flex items-center gap-16 text-zinc-600">DAX <span class="text-gold">✦</span></span>
+            <span class="flex items-center gap-16 text-zinc-600">Excel <span class="text-gold">✦</span></span>
+            <span class="flex items-center gap-16 text-zinc-600">Financial Analysis <span class="text-gold">✦</span></span>
+            <span class="flex items-center gap-16 text-zinc-600">Power BI <span class="text-gold">✦</span></span>
+            <span class="flex items-center gap-16 text-zinc-600">SQL <span class="text-gold">✦</span></span>
+            <span class="flex items-center gap-16 text-zinc-600">Python <span class="text-gold">✦</span></span>
+        </div>
+    </div>
+
+    
+    <section id="work" class="px-6 lg:px-10 py-32 max-w-7xl mx-auto">
+        <div class="flex items-baseline gap-4 mb-20">
+            <span class="font-mono text-xs text-gold">01 /</span>
+            <span class="h-px flex-1 bg-border"></span>
+            <span class="font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">Portfolio</span>
+        </div>
+
+        <div class="space-y-32">
+            
+            <article class="grid lg:grid-cols-12 gap-12 items-start group">
+                <div class="lg:col-span-5 sticky top-32">
+                    <div class="font-mono text-xs text-gold mb-6 uppercase tracking-widest">AdventureWorks</div>
+                    <h3 class="font-display text-5xl leading-none mb-6">Sales & Business Performance</h3>
+                    <p class="text-zinc-400 text-lg leading-relaxed mb-8"> Analysed $109.85M in sales data across FY 2011–2014 (32K orders, 19K customers) using the
+AdventureWorks dataset</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full border border-border text-xs font-mono uppercase">Power BI</span>
+                        <span class="px-3 py-1 rounded-full border border-border text-xs font-mono uppercase">DAX</span>
+                        <span class="px-3 py-1 rounded-full border border-border text-xs font-mono uppercase">Mix Strategy</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="rounded-3xl border border-border bg-card p-10 hover:border-gold/40 transition-all group-hover:shadow-[0_0_40px_rgba(234,179,8,0.05)]">
+                        <ul class="space-y-6">
+                            <li class="flex gap-4 text-zinc-200">
+                                <span class="text-gold mt-1 shrink-0 italic">✦</span>
+                                <span>Built a 3-page interactive Power BI dashboard covering Sales Performance, Product & Customer
+Analysis, and Operational Inventory.</span>
+                            </li>
+                            <li class="flex gap-4 text-zinc-200">
+                                <span class="text-gold mt-1 shrink-0 italic">✦</span>
+                                <span>Identified that Bikes drive 86% of revenue but carry only 8.77% profit margin vs Accessories at 59.13%
+— recommended revenue mix shift.</span>
+                            </li>
+                            <li class="flex gap-4 text-zinc-200">
+                                <span class="text-gold mt-1 shrink-0 italic">✦</span>
+                                <span>Uncovered 3 loss-making territories and flagged a below-cost product (Road-250 Black) requiring
+immediate pricing review.</span>
+                            </li>
+                            <li class="flex gap-4 text-zinc-200">
+                                <span class="text-gold mt-1 shrink-0 italic">✦</span>
+                                <span>Delivered a 2-page executive summary with documented methodology, assumptions, and 5 actionable
+business recommendations.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+ <article class="grid lg:grid-cols-12 gap-12 items-start group">
+                <div class="lg:col-span-5 sticky top-32">
+                    <div class="font-mono text-xs text-gold mb-6 uppercase tracking-widest">Performance Analysis</div>
+                    <h3 class="font-display text-5xl leading-none mb-6">Sales & Company Performance Analysis</h3>
+                    <p class="text-zinc-400 text-lg leading-relaxed mb-8">Cleaned raw sales data in Excel and removed duplicates, fixed missing values, and standardised
+categorical fields.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full border border-border text-xs font-mono uppercase">Power BI</span>
+                        <span class="px-3 py-1 rounded-full border border-border text-xs font-mono uppercase">Excel</span>
+                        <span class="px-3 py-1 rounded-full border border-border text-xs font-mono uppercase">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="rounded-3xl border border-border bg-card p-10 hover:border-gold/40 transition-all group-hover:shadow-[0_0_40px_rgba(234,179,8,0.05)]">
+                        <ul class="space-y-6">
+                            <li class="flex gap-4 text-zinc-200">
+                                <span class="text-gold mt-1 shrink-0 italic">✦</span>
+                                <span>Conducted EDA to uncover customer ordering patterns, yearly sales trends, and departmental employee distribution.</span>
+                            </li>
+                            <li class="flex gap-4 text-zinc-200">
+                                <span class="text-gold mt-1 shrink-0 italic">✦</span>
+                                <span>Built interactive Power BI dashboards tracking KPIs across sales trends, product performance, and
+payment method insights.</span>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="grid lg:grid-cols-12 gap-12 items-start group">
+                <div class="lg:col-span-5 sticky top-32">
+                    <div class="font-mono text-xs text-gold mb-6 uppercase tracking-widest">RFM MODEL</div>
+                    <h3 class="font-display text-5xl leading-none mb-6">Online Retail Segmentation</h3>
+                    <p class="text-zinc-400 text-lg leading-relaxed mb-8">Cleaned 1M+ rows of retail data to build a segmentation model identifying 1,468 Champion customers.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full border border-border text-xs font-mono uppercase">Python</span>
+                        <span class="px-3 py-1 rounded-full border border-border text-xs font-mono uppercase">Pandas</span>
+                        <span class="px-3 py-1 rounded-full border border-border text-xs font-mono uppercase">Marketing Analytics</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="rounded-3xl border border-border bg-card p-10 hover:border-gold/40 transition-all group-hover:shadow-[0_0_40px_rgba(234,179,8,0.05)]">
+                        <ul class="space-y-6">
+                            <li class="flex gap-4 text-zinc-200">
+                                <span class="text-gold mt-1 shrink-0 italic">✦</span>
+                                <span> Cleaned a 1M+ row retail transaction dataset and removed 59,005 rows of duplicates, nulls,
+cancellations, and invalid entries</span>
+                            </li>
+                            <li class="flex gap-4 text-zinc-200">
+                                <span class="text-gold mt-1 shrink-0 italic">✦</span>
+                                <span>Flagged 2,039 At Risk/Lost customers for reactivation campaigns and 118 high-spend low-frequency
+customers for personalised outreach.</span>
+                            </li>
+                             <li class="flex gap-4 text-zinc-200">
+                                <span class="text-gold mt-1 shrink-0 italic">✦</span>
+                                <span>Produced a 6-chart Python visualisation dashboard covering segment distribution, recency vs
+frequency, and regional breakdown.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    
+    <section id="experience" class="px-6 lg:px-10 py-32 max-w-7xl mx-auto border-t border-border">
+        <div class="flex items-baseline gap-4 mb-20">
+            <span class="font-mono text-xs text-gold">02 /</span>
+            <span class="h-px flex-1 bg-border"></span>
+            <span class="font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">History</span>
+        </div>
+
+        <div class="space-y-12">
+            <div class="grid md:grid-cols-12 gap-6 py-10 border-b border-border">
+                <div class="md:col-span-3 font-mono text-sm text-zinc-500">2025 — PRESENT</div>
+                <div class="md:col-span-4 font-display text-4xl">Teller</div>
+                <div class="md:col-span-5 text-zinc-400">
+                    <span class="text-white font-bold block mb-2">Ecobank Nigeria Ltd</span>
+                    Processing 150+ daily transactions with 100% accuracy. Conducting KYC & AML monitoring in line with CBN standards.
+                </div>
+            </div>
+            <div class="grid md:grid-cols-12 gap-6 py-10 border-b border-border">
+                <div class="md:col-span-3 font-mono text-sm text-zinc-500">2021 — 2023</div>
+                <div class="md:col-span-4 font-display text-4xl">Billing Officer</div>
+                <div class="md:col-span-5 text-zinc-400">
+                    <span class="text-white font-bold block mb-2">Capital Gee Ventures</span>
+                    Reconciled client accounts monthly, reduced billing errors through bank statement verification and accounts payable management.
+                </div>
+            </div>
+            <div class="grid md:grid-cols-12 gap-6 py-10 border-b border-border">
+                <div class="md:col-span-3 font-mono text-sm text-zinc-500">2020</div>
+                <div class="md:col-span-4 font-display text-4xl">Intern</div>
+                <div class="md:col-span-5 text-zinc-400">
+                    <span class="text-white font-bold block mb-2">Sona Plastics Limited</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer id="contact" class="relative px-6 lg:px-10 py-40 border-t border-border overflow-hidden">
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-gold/5 blur-[120px]"></div>
+        
+        <div class="relative max-w-5xl mx-auto text-center">
+            <h2 class="font-display text-5xl md:text-8xl tracking-tighter leading-[0.95] mb-12">
+                Have a messy dataset that <br><em class="gradient-text italic">needs working on</em>?<br>
+                Let me create clean and actionable insights from that mess.
+            </h2>
+            
+            <div class="flex flex-wrap items-center justify-center gap-6">
+                <a href="mailto:Johnsonjanet6117@gmail.com" class="px-8 py-5 rounded-2xl bg-gold text-black font-bold text-lg hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] transition-all">
+                    Johnsonjanet6117@gmail.com
+                </a>
+                <a href="tel:+2347012604645" class="px-8 py-5 rounded-2xl border border-border bg-card text-white font-bold text-lg hover:bg-zinc-800 transition-all">
+                    +234 701-260-4645
+                </a>
+                <a href="https://linkedin.com/in/janet-johnson-oj" target="_blank" class="px-8 py-5 rounded-2xl border border-border bg-card text-white font-bold text-lg hover:bg-zinc-800 transition-all">
+                    LinkedIn ↗
+                </a>
+            </div>
+
+            <div class="mt-40 flex flex-col md:flex-row justify-between items-center gap-6 text-zinc-600 text-[10px] font-mono tracking-widest uppercase">
+                <div>© 2026 JANET JOHNSON · LAGOS, NIGERIA</div>
+                <div>DESIGNED WITH INTENT. BUILT WITH DATA.</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
